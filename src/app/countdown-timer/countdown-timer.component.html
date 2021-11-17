@@ -1,17 +1,62 @@
 <mat-spinner *ngIf="isLoading" style="margin: 20% auto;"></mat-spinner>
 
-<mat-card *ngIf="!isLoading">
-  <mat-card-header style="display: block;">
-    <h2 style="text-align: center;">{{registredEvent.eventName}}</h2>
-  </mat-card-header>
-  <mat-card-content>
-    <div class="container-timer">
-      <ul>
-        <li><span>{{currentTime.day}}</span><br>DAYS</li>
-        <li><span>{{currentTime.hour}}</span><br>HOURS</li>
-        <li><span>{{currentTime.minute}}</span><br>MINUTES</li>
-        <li><span>{{currentTime.second}}</span><br>SECONDS</li>
-      </ul>
-    </div>
-  </mat-card-content>
-</mat-card>
+<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+    <mat-card id="countdownCard" *ngIf="!isLoading">
+        <mat-card-header style="display: block;">
+          <h2 style="text-align: center;">{{registredEvent.eventName}}</h2>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container-timer">
+            <ul>
+              <li><span>{{currentTime.day}}</span><br>JOURS</li>
+              <li><span>{{currentTime.hour}}</span><br>HEURES</li>
+              <li><span>{{currentTime.minute}}</span><br>MINUTES</li>
+              <li><span>{{currentTime.second}}</span><br>SECONDES</li>
+            </ul>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      
+      <mat-card *ngIf="!isLoading">
+          <mat-card-header style="display: block;">
+            <h2 style="text-align: center;">Inscription</h2>
+          </mat-card-header>
+          <mat-card-content>
+              <div class="container-timer">
+                  <form [formGroup]="loginForm" (submit)="submit()">
+                      
+                      <mat-form-field class="form-field" appearance="outline">
+                          <mat-label> Nom
+                          </mat-label>
+                          <input matInput formControlName="password" type="password">
+                          <mat-error *ngIf="loginForm.controls.password.touched && loginForm.controls.password.invalid">
+                            <span *ngIf="loginForm.controls.password.errors.required">This field is mandatory.</span>
+                          </mat-error>
+                        </mat-form-field>
+                      <mat-form-field class="form-field" appearance="outline">
+                        <mat-label> Prenom
+                        </mat-label>
+                        <input matInput formControlName="password" type="password">
+                        <mat-error *ngIf="loginForm.controls.password.touched && loginForm.controls.password.invalid">
+                          <span *ngIf="loginForm.controls.password.errors.required">This field is mandatory.</span>
+                        </mat-error>
+                      </mat-form-field>
+                      <mat-form-field class="form-field" appearance="outline">
+                          <mat-label> Mail
+                          </mat-label>
+                          <input matInput formControlName="email" required>
+                          <mat-error *ngIf="loginForm.controls.email.touched && loginForm.controls.email.invalid">
+                            <span *ngIf="loginForm.controls.email.errors.required">This field is mandatory.</span>
+                            <span *ngIf="loginForm.controls.email.errors.pattern">This field is invalid.</span>
+                          </mat-error>
+                        </mat-form-field>
+                      <button mat-raised-button color="primary" type="submit">Je participe</button>
+                    </form>
+              </div>
+          </mat-card-content>
+        </mat-card>
+</div>
+
+
+
+

@@ -1,5 +1,4 @@
 .container-timer {
-  color: #333;
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
@@ -18,10 +17,27 @@ li span {
   font-size: 4.5rem;
 }
 
+.mat-card {
+  width: 50%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+#countdownCard {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  margin: 30px;
+}
+
+.mat-card-header, .mat-card-content {
+  color : rgb(238, 186, 206) !important;
+}
+
+.form-field{
+  display: block
 }
 
 

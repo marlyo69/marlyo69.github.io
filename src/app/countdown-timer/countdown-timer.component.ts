@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Timer, RegisterEvent } from './../interfaces';
 import { Observable } from 'rxjs';
 import { ModalAlertsService, DataBaseService } from '../services';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 const webNotification = require('simple-web-notification');
 
@@ -15,9 +16,19 @@ export class CountdownTimerComponent implements OnInit {
   currentTime: Timer;
   isLoading = true;
 
-  constructor(private db: DataBaseService, private modal: ModalAlertsService) {}
+  loginForm: FormGroup;
+  emailRegx = /^(([^<>+()\[\]\\.,;:\s@"-#$%&=]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
+
+
+  constructor(private db: DataBaseService, private modal: ModalAlertsService, private formBuilder: FormBuilder) {}
 
   ngOnInit() {
+
+    this.loginForm = this.formBuilder.group({
+      email: [null, [Validators.required, Validators.pattern(this.emailRegx)]],
+      password: [null, Validators.required]
+    });
+
     this.setTimer(new Date(this.registredEvent.registeredDate)).subscribe(res => {
       this.isLoading = false;
       this.currentTime = res;

@@ -11,6 +11,11 @@ import { Observable } from 'rxjs';
 export class AllEventsComponent implements OnInit {
 
   eventsAct: RegisterEvent[];
+  eventToShow: RegisterEvent = {
+    eventName: 'CGI ANNUAL PARTY',
+    eventStatus: 'A',
+    registeredDate: '2021-12-16T20:00:00.000Z'
+  };
 
   constructor(private db: DataBaseService, private modal: ModalAlertsService) {
     this.filterEvents().subscribe((res) => {
@@ -18,7 +23,8 @@ export class AllEventsComponent implements OnInit {
     }, (err) => this.modal.modalTerror('Error!', err));
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   private filterEvents(): Observable<RegisterEvent[]> {
     return new Observable<RegisterEvent[]>((obs) => {

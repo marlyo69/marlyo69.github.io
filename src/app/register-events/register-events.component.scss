@@ -1,0 +1,42 @@
+.container-form-field {
+  display: block;
+  width: 100%;
+}
+.container-error {
+  color: red;
+  margin-top: -2%;
+}
+
+.container-main {
+  width: 60%;
+  display: block;
+  margin: 10% auto;
+}
+
+.btn-clear {
+  margin-left: 3%;
+}
+
+@media (max-width: 801px) {
+  .container-main {
+    width: 60%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container-main {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .btn-save {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .btn-clear {
+    margin-left: 0% !important;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}

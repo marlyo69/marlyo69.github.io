@@ -11,7 +11,7 @@ https://templatemo.com/tm-521-get-ready
   body {
     margin: 0;
     -webkit-perspective: 1000;
-    font-family: 'Mountains of Christmas', 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #303030;
   }
 
@@ -21,6 +21,12 @@ https://templatemo.com/tm-521-get-ready
     overflow-x: hidden;
   }
 
+  .flex-container {
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    width: 100%;
+    font-size: 10px;
+  }
 
 
   /*---------------------------------------
@@ -338,7 +344,7 @@ https://templatemo.com/tm-521-get-ready
   }
 
   #home .container {
-    width: 100%;
+    width: 70%;
   }
 
   .home-info {

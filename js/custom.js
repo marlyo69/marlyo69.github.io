@@ -14,15 +14,4 @@
       $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
     });
 
-
-    // ABOUT SLIDER
-    $('body').vegas({
-        slides: [
-            { src: 'images/slide-image01.png' },
-            { src: 'images/slide-image02.jpg' }
-        ],
-        timer: false,
-        transition: [ 'zoomOut', ]
-    });
-
 })(jQuery);

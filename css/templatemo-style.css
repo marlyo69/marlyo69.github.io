@@ -11,7 +11,7 @@ https://templatemo.com/tm-521-get-ready
   body {
     margin: 0;
     -webkit-perspective: 1000;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mountains of Christmas', 'Poppins', sans-serif;
     background: #303030;
   }
 
@@ -33,13 +33,17 @@ https://templatemo.com/tm-521-get-ready
   }
 
   h1 {
-    color: #ffffff;
-    font-size: 2em;
+    color: #C30F16;
+    font-size: 3em;
   }
 
   h2 {
     color: #353535;
     font-size: 2em;
+  }
+
+  h4,h5,h6 {
+    font-family: 'Poppins';
   }
 
   p {
@@ -346,6 +350,7 @@ https://templatemo.com/tm-521-get-ready
     z-index: 2;
     width: 100%;
     height: 100vh;
+    color: #ffffff;
   }
   
   .countdown {
@@ -355,18 +360,18 @@ https://templatemo.com/tm-521-get-ready
   }
 
   .countdown li {
-    color: #ffffff;
+    color: #C30F16;
     list-style: none;
     display: inline-block;
     margin: 0 20px;
   }
 
   .countdown span {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .countdown h3 {
-    font-size: 14px;
+    font-size: 30px;
     text-transform: uppercase;
     margin: 10px 0;
   }
@@ -454,4 +459,14 @@ https://templatemo.com/tm-521-get-ready
     .countdown h3 {
       font-size: 12px;
     }
+  }
+
+
+  #myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
   }

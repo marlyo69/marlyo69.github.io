@@ -461,6 +461,15 @@ https://templatemo.com/tm-521-get-ready
       color: #ffffff;
     }
 
+    #myVideo {
+      display: none;
+    }
+
+    body {
+      background: url('../images/poster.png');
+      background-size: cover;
+  }
+
   }
 
   #myVideo {

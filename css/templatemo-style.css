@@ -15,6 +15,11 @@ https://templatemo.com/tm-521-get-ready
     background: #303030;
   }
 
+  @font-face {
+    font-family:"Jonathan";
+    src: url("../fonts/Jonathan.ttf") format("truetype");
+  }
+
   body, html {
     height: 100%;
     width: 100%;
@@ -372,7 +377,7 @@ https://templatemo.com/tm-521-get-ready
   }
 
   .countdown li {
-    color: #96279c;
+    color: #de0449;
     list-style: none;
     display: inline-block;
   }
@@ -431,6 +436,18 @@ https://templatemo.com/tm-521-get-ready
     color: #ffffff;
   }
 
+  .neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+  }
 
 
   /*---------------------------------------
@@ -456,7 +473,7 @@ https://templatemo.com/tm-521-get-ready
     }
 
     .btn-cgi {
-      background-color: #96279c;
+      background-color: #fd063b;
       border-color: #96279c;
       color: #ffffff;
     }

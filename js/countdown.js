@@ -20,53 +20,53 @@
 			
 			eventDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
-			secondImageTimestamp = 1638206700;
+			secondImageTimestamp = 1638206940;
 			secondImageText = 'Rendez vous le 6 Décembre à minuit pour le prochain indice!';
-			thirdImageTimestamp = 1638206710;
+			thirdImageTimestamp = 1638206950;
 			thirdImageText = 'Rendez vous le 8 Décembre à minuit pour le prochain indice!';
-			fourthImageTimestamp = 1638206720;
+			fourthImageTimestamp = 1638206960;
 			fourthImageText = 'Rendez vous le 10 Décembre à minuit pour le prochain indice!';
-			fifthImageTimestamp = 1638206730;
+			fifthImageTimestamp = 1638206970;
 			fifthImageText = 'Rendez vous le 13 Décembre à minuit pour le prochain indice!';
-			sixthImageTimestamp = 1638206740;
+			sixthImageTimestamp = 1638206980;
 			sixthImageText = 'Rendez vous le 14 Décembre à minuit pour le prochain indice!';
-			seventhImageTimestamp = 1638206750;
+			seventhImageTimestamp = 1638206990;
 			seventhImageText = 'Rendez vous le 15 Décembre à minuit pour le prochain indice!';
-			eighthImageTimestamp = 1638206760;
+			eighthImageTimestamp = 1638206999;
 			eighthImageText = '';
 			//2
 			if(currentDate == secondImageTimestamp) {
-				$(".imageIndice").attr('src', "images/second.png");
+				$(".imageIndice").attr('src', "images/second.jpg");
 				$("#rendezvous").text(secondImageText);
 			}
 			//3
 			if(currentDate == thirdImageTimestamp) {
-				$(".imageIndice").attr('src', "images/third.png");
+				$(".imageIndice").attr('src', "images/third.jpg");
 				$("#rendezvous").text(thirdImageText);
 			}
 			//4
 			if(currentDate == fourthImageTimestamp) {
-				$(".imageIndice").attr('src', "images/fourth.png");
+				$(".imageIndice").attr('src', "images/fourth.jpg");
 				$("#rendezvous").text(fourthImageText);
 			}
 			//5
 			if(currentDate == fifthImageTimestamp) {
-				$(".imageIndice").attr('src', "images/fifth.png");
+				$(".imageIndice").attr('src', "images/fifth.jpg");
 				$("#rendezvous").text(fifthImageText);
 			}
 			//6
 			if(currentDate == sixthImageTimestamp) {
-				$(".imageIndice").attr('src', "images/sixth.png");
+				$(".imageIndice").attr('src', "images/sixth.jpg");
 				$("#rendezvous").text(sixthImageText);
 			}
 			//7
 			if(currentDate == seventhImageTimestamp) {
-				$(".imageIndice").attr('src', "images/seventh.png");
+				$(".imageIndice").attr('src', "images/seventh.jpg");
 				$("#rendezvous").text(seventhImageText);
 			}
 			//8
 			if(currentDate == eighthImageTimestamp) {
-				$(".imageIndice").attr('src', "images/eighth.png");
+				$(".imageIndice").attr('src', "images/eighth.jpg");
 				$("#rendezvous").text(eighthImageText);
 			}
 			if(eventDate <= currentDate) {

@@ -34,9 +34,6 @@
 			seventhImageText = 'Rendez vous le 15 Décembre à minuit pour le prochain indice!';
 			eighthImageTimestamp = 1638210060;
 			eighthImageText = '';
-
-			console.log('current date : ' + currentDate);
-			console.log('timestamp :'+ testTimestamp);
 			//2
 			if(currentDate == secondImageTimestamp) {
 				$(".imageIndice").attr('src', "images/second.png");

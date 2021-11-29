@@ -458,6 +458,8 @@ https://templatemo.com/tm-521-get-ready
 
     .countdown li {
       margin: 0 12px;
+      line-height: 0 !important;
+      margin-top: 30px;
     }
 
     address {

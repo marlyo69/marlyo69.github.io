@@ -20,19 +20,19 @@
 			
 			eventDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
-			secondImageTimestamp = 1638206940;
+			secondImageTimestamp = 1638486000;
 			secondImageText = 'Rendez vous le 6 Décembre à minuit pour le prochain indice!';
-			thirdImageTimestamp = 1638206950;
+			thirdImageTimestamp = 1638745200;
 			thirdImageText = 'Rendez vous le 8 Décembre à minuit pour le prochain indice!';
-			fourthImageTimestamp = 1638206960;
+			fourthImageTimestamp = 1638918000;
 			fourthImageText = 'Rendez vous le 10 Décembre à minuit pour le prochain indice!';
-			fifthImageTimestamp = 1638206970;
+			fifthImageTimestamp = 1639090800;
 			fifthImageText = 'Rendez vous le 13 Décembre à minuit pour le prochain indice!';
-			sixthImageTimestamp = 1638206980;
+			sixthImageTimestamp = 1639350000;
 			sixthImageText = 'Rendez vous le 14 Décembre à minuit pour le prochain indice!';
-			seventhImageTimestamp = 1638206990;
+			seventhImageTimestamp = 1639436400;
 			seventhImageText = 'Rendez vous le 15 Décembre à minuit pour le prochain indice!';
-			eighthImageTimestamp = 1638206999;
+			eighthImageTimestamp = 1639522800;
 			eighthImageText = '';
 			//2
 			if(currentDate == secondImageTimestamp) {

@@ -20,7 +20,58 @@
 			
 			eventDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
-			
+			secondImageTimestamp = 1638210000;
+			secondImageText = 'Rendez vous le 6 Décembre à minuit pour le prochain indice!';
+			thirdImageTimestamp = 1638210010;
+			thirdImageText = 'Rendez vous le 8 Décembre à minuit pour le prochain indice!';
+			fourthImageTimestamp = 1638210020;
+			fourthImageText = 'Rendez vous le 10 Décembre à minuit pour le prochain indice!';
+			fifthImageTimestamp = 1638210030;
+			fifthImageText = 'Rendez vous le 13 Décembre à minuit pour le prochain indice!';
+			sixthImageTimestamp = 1638210040;
+			sixthImageText = 'Rendez vous le 14 Décembre à minuit pour le prochain indice!';
+			seventhImageTimestamp = 1638210050;
+			seventhImageText = 'Rendez vous le 15 Décembre à minuit pour le prochain indice!';
+			eighthImageTimestamp = 1638210060;
+			eighthImageText = '';
+
+			console.log('current date : ' + currentDate);
+			console.log('timestamp :'+ testTimestamp);
+			//2
+			if(currentDate == secondImageTimestamp) {
+				$(".imageIndice").attr('src', "images/second.png");
+				$("#rendezvous").text(secondImageText);
+			}
+			//3
+			if(currentDate == thirdImageTimestamp) {
+				$(".imageIndice").attr('src', "images/third.png");
+				$("#rendezvous").text(thirdImageText);
+			}
+			//4
+			if(currentDate == fourthImageTimestamp) {
+				$(".imageIndice").attr('src', "images/fourth.png");
+				$("#rendezvous").text(fourthImageText);
+			}
+			//5
+			if(currentDate == fifthImageTimestamp) {
+				$(".imageIndice").attr('src', "images/fifth.png");
+				$("#rendezvous").text(fifthImageText);
+			}
+			//6
+			if(currentDate == sixthImageTimestamp) {
+				$(".imageIndice").attr('src', "images/sixth.png");
+				$("#rendezvous").text(sixthImageText);
+			}
+			//7
+			if(currentDate == seventhImageTimestamp) {
+				$(".imageIndice").attr('src', "images/seventh.png");
+				$("#rendezvous").text(seventhImageText);
+			}
+			//8
+			if(currentDate == eighthImageTimestamp) {
+				$(".imageIndice").attr('src', "images/eighth.png");
+				$("#rendezvous").text(eighthImageText);
+			}
 			if(eventDate <= currentDate) {
 				callback.call(this);
 			}

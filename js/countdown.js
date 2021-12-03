@@ -42,7 +42,6 @@
 			}
 			//3
 			if(currentDate >= thirdImageTimestamp && currentDate < fourthImageTimestamp) {
-				console.log('THIRD IMAGE');
 				$(".imageIndice").attr('src', "images/third.jpg");
 				$("#rendezvous").text(thirdImageText);
 			}

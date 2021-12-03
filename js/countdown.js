@@ -20,10 +20,10 @@
 			
 			eventDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
-			console.log('TIMESTAMP : '+ currentDate);
+			
 			secondImageTimestamp = 1638486000;
 			secondImageText = 'Rendez vous le 6 Décembre à minuit pour le prochain indice!';
-			thirdImageTimestamp = 1638745200;
+			thirdImageTimestamp = 1638519616;
 			thirdImageText = 'Rendez vous le 8 Décembre à minuit pour le prochain indice!';
 			fourthImageTimestamp = 1638918000;
 			fourthImageText = 'Rendez vous le 10 Décembre à minuit pour le prochain indice!';
@@ -42,6 +42,7 @@
 			}
 			//3
 			if(currentDate == thirdImageTimestamp) {
+				console.log('THIRD IMAGE');
 				$(".imageIndice").attr('src', "images/third.jpg");
 				$("#rendezvous").text(thirdImageText);
 			}

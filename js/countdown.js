@@ -20,6 +20,7 @@
 			
 			eventDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
+			console.log('TIMESTAMP : '+ currentDate);
 			secondImageTimestamp = 1638486000;
 			secondImageText = 'Rendez vous le 6 Décembre à minuit pour le prochain indice!';
 			thirdImageTimestamp = 1638745200;

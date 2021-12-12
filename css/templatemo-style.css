@@ -449,6 +449,17 @@ https://templatemo.com/tm-521-get-ready
         0 0 151px #fff;
   }
 
+  .btn-cgi {
+    background-color: #fd063b;
+    border-color: #fd063b;
+    color: #ffffff;
+  }
+
+  body {
+    background: url('../images/poster.png');
+    background-size: cover;
+  }
+
 
   /*---------------------------------------
      RESPONSIVE STYLES              
@@ -483,6 +494,6 @@ https://templatemo.com/tm-521-get-ready
     body {
       background: url('../images/poster.png');
       background-size: cover;
-  }
+    }
 
   }
